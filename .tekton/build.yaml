@@ -129,9 +129,7 @@ spec:
           - name: TLSVERIFY
             value: "false"
           - name: MAVEN_MIRROR_URL
-            value: http://nexus:8081/repository/maven-public/
-          - name: MAVEN_ARGS_APPEND
-            value: "-Dspring-boot.run.profiles=postgres"            
+            value: http://nexus:8081/repository/maven-public/           
           - name: PATH_CONTEXT
             value: spring-petclinic/target
           - name: IMAGE
