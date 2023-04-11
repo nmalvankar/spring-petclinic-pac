@@ -131,7 +131,7 @@ spec:
           - name: MAVEN_MIRROR_URL
             value: http://nexus:8081/repository/maven-public/
           - name: MAVEN_ARGS_APPEND
-            vale: "-Dspring-boot.run.profiles=postgres"            
+            value: "-Dspring-boot.run.profiles=postgres"            
           - name: PATH_CONTEXT
             value: spring-petclinic/target
           - name: IMAGE
