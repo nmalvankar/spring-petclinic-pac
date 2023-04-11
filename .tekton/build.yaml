@@ -63,7 +63,7 @@ spec:
           workspace: source
         params:
         - name: GOALS
-          value: ["package", "-f", "spring-petclinic"]
+          value: ["test", "-f", "spring-petclinic"]
       - name: code-analysis
         taskRef:
           name: maven
