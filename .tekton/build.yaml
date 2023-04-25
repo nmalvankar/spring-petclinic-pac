@@ -133,7 +133,7 @@ spec:
           - name: PATH_CONTEXT
             value: spring-petclinic/target
           - name: IMAGE
-            value: image-registry.openshift-image-registry.svc:5000/$(context.pipelineRun.namespace)/spring-petclinic:latest
+            value: quay.io/nmalvankar/spring-petclinic:latest
         workspaces:
         - name: source
           workspace: source
@@ -152,7 +152,7 @@ spec:
           - name: CURRENT_IMAGE
             value: quay.io/nmalvankar/spring-petclinic:latest
           - name: NEW_IMAGE
-            value: image-registry.openshift-image-registry.svc:5000/$(context.pipelineRun.namespace)/spring-petclinic
+            value: quay.io/nmalvankar/spring-petclinic
           - name: NEW_DIGEST
             value: "$(tasks.build-image.results.IMAGE_DIGEST)"
           - name: KUSTOMIZATION_PATH
